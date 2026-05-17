@@ -40,27 +40,28 @@ makes the system accessible to non-technical users without requiring any ML expe
 
 ---
 
-## Project Structure
+## 📁 Project Structure
+
 Automated-Analysis-Of-Medical-Imaging/
-├── app.py              # Streamlit frontend
-├── detect.py           # YOLO detection logic
-├── predict_HRI.py      # CNN prediction pipeline
-├── test.py             # Model testing scripts
-├── utils.py            # Utility functions
-├── setup.py            # Cython build setup
-├── build.sh            # Build script
-├── flow                # Flow execution entry
-├── labels.txt          # Class labels
-├── cmd.txt             # Command reference
-├── cfg/                # YOLO config files
-├── darkflow/           # Darkflow YOLO framework
-├── data/               # Sample input data
-├── output/             # Detection outputs
-├── preprocess/         # Data preprocessing scripts
-├── weights/            # Model weight files
-├── build/              # Compiled Cython build
-├── runtime.txt         # Runtime configuration
-└── requirements.txt    # Dependencies
+├── app.py              # Streamlit web application & interactive user dashboard
+├── detect.py           # Core YOLOv2 object detection & cellular localization logic
+├── predict_HRI.py      # Custom CNN (Convolutional Neural Network) prediction pipeline
+├── test.py             # Model verification and performance testing scripts
+├── utils.py            # Image processing helper functions & matrix utilities
+├── setup.py            # Cython build configuration for C-optimized execution speeds
+├── build.sh            # Shell automation script to compile C-extensions locally
+├── flow                # Darkflow execution entry point for running network logic
+├── labels.txt          # Class target labels (e.g., cell types, RBC, WBC counts)
+├── cmd.txt             # Command-line execution logs and reference guide
+├── cfg/                # YOLO network architecture configuration files (.cfg)
+├── darkflow/           # Core Darkflow framework code parsing YOLO into TensorFlow
+├── data/               # Raw sample medical images and training/validation datasets
+├── output/             # Processed images featuring bounding boxes & analytical metrics
+├── preprocess/         # Custom scripts for image normalization and data augmentation
+├── weights/            # Pre-trained deep learning binary model weights (.weights)
+├── build/              # Output directory for the compiled C-optimized Cython files
+├── runtime.txt         # Hosting environment execution specifications
+└── requirements.txt    # Project framework dependencies and version controls
 
 ---
 
@@ -80,4 +81,4 @@ streamlit run app.py
 
 **Raghu Sharma**  
 B.Tech CSE (AI/ML) — Maharaja Surajmal Institute of Technology, Delhi  
-[GitHub](https://github.com/RaghuSharma14) | raghusharma1430@gmail.com
+raghusharma1430@gmail.com 
